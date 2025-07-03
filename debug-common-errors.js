@@ -24,24 +24,32 @@ Think about which debugging methods you found most useful and how you might appl
 // Description:
 // This program is intended to display a simple prompt in the console but fails to run.
 
-console.log("Welcome to the bootcamp
+console.log("Welcome to the bootcamp");
 
 // What’s Wrong?
+
+// Syntax Error
+// The error is that the string is incomplete. missing a closing "
+// The 2nd error is that the .log method must be closed with a closing )
+// add missing  " and ) 
+
+
 
 
 // Program B
 // Description:
 // This code attempts to multiply each number in an array by 2 and display the results. However, it crashes at runtime.
 
-let numbers = [2, 4, "eight"];
+let numbers = [2, 4, 8];
 for (let i = 0; i < numbers.length; i++) {
   let doubled = numbers[i] * 2;
   console.log(doubled);
 }
 
 // What’s Wrong?
-
-
+// Logic Error
+// The error is that third element in the array, "eight", is not a number. 
+// change string eight to num 8
 
 // Program C (Logic Error)
 // Description:
@@ -60,3 +68,6 @@ function isPrime(num) {
 console.log(isPrime(7)); // Expected true but gets false
 
 // What’s Wrong?
+// Logic Error
+// The error is that the return value is swapped. 
+// swap return true and return false.
